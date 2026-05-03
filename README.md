@@ -25,6 +25,9 @@
 ![Kafka](https://img.shields.io/badge/Apache%20Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![RAG](https://img.shields.io/badge/RAG-4F46E5?style=for-the-badge&logo=semanticweb&logoColor=white)
+![Codex](https://img.shields.io/badge/Codex-111111?style=for-the-badge&logo=openai&logoColor=white)
+![Claude](https://img.shields.io/badge/Claude-D97706?style=for-the-badge&logo=anthropic&logoColor=white)
 
 </div>
 
@@ -34,7 +37,7 @@
 
 - Agent Backend Developer focused on Java, Spring, and practical engineering.
 - Comfortable with MySQL, Redis, RabbitMQ, Kafka, and MyBatis-Plus in backend systems.
-- Exploring Python, PyTorch, AI agents, and AI-assisted development workflows.
+- Exploring Python, PyTorch, RAG, AI agents, Codex, Claude, and AI-assisted development workflows.
 - Interested in building intelligent backend services that are clear, reliable, and easy to maintain.
 
 ```text
@@ -42,7 +45,7 @@ Role            Agent Backend Developer
 Primary stack   Java / Spring / MySQL / Redis
 Middleware      RabbitMQ / Kafka
 Persistence     MyBatis-Plus
-AI learning     Python / PyTorch / Agent Systems
+AI learning     Python / PyTorch / RAG / Codex / Claude / Agent Systems
 Focus           Intelligent backend engineering
 ```
 
