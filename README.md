@@ -2,7 +2,7 @@
 
 # Hi, I'm woshibaizi 👋
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=700&color=70A5FD&center=true&vCenter=true&width=720&lines=Java+Backend+Developer;Spring+%2F+MySQL+%2F+Redis+Engineering;Learning+Python+%2F+PyTorch+%2F+AI+Systems;Building+reliable+backend+services)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=700&color=70A5FD&center=true&vCenter=true&width=760&lines=Agent+Backend+Developer;Java+%2F+Spring+Backend+Engineering;Building+AI-powered+backend+services;Learning+Python+%2F+PyTorch+%2F+Agent+Systems)](https://git.io/typing-svg)
 
 [![GitHub followers](https://img.shields.io/github/followers/woshibaizi?logo=github&style=for-the-badge&color=0891b2&labelColor=1c1917)](https://github.com/woshibaizi)
 [![GitHub stars](https://img.shields.io/github/stars/woshibaizi?style=for-the-badge&logo=github&color=0891b2&labelColor=1c1917)](https://github.com/woshibaizi)
@@ -32,17 +32,18 @@
 
 ## About Me
 
-- Backend developer focused on Java, Spring, and practical engineering.
+- Agent Backend Developer focused on Java, Spring, and practical engineering.
 - Comfortable with MySQL, Redis, RabbitMQ, Kafka, and MyBatis-Plus in backend systems.
-- Exploring Python, PyTorch, and AI-assisted development workflows.
-- Interested in building services that are clear, reliable, and easy to maintain.
+- Exploring Python, PyTorch, AI agents, and AI-assisted development workflows.
+- Interested in building intelligent backend services that are clear, reliable, and easy to maintain.
 
 ```text
+Role            Agent Backend Developer
 Primary stack   Java / Spring / MySQL / Redis
 Middleware      RabbitMQ / Kafka
 Persistence     MyBatis-Plus
-AI learning     Python / PyTorch
-Focus           Backend engineering and intelligent applications
+AI learning     Python / PyTorch / Agent Systems
+Focus           Intelligent backend engineering
 ```
 
 ---
