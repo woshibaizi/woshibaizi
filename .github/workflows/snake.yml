@@ -2,7 +2,9 @@ name: Generate contribution snake
 
 on:
   schedule:
-    - cron: "0 0 * * *"
+    # Refresh the account-wide calendar at GitHub's shortest supported interval.
+    # Avoid minute 0; scheduling and contribution indexing can still be delayed.
+    - cron: "2-59/5 * * * *"
   workflow_dispatch:
   push:
     branches:
@@ -11,9 +13,14 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: contribution-snake
+  cancel-in-progress: false
+
 jobs:
   generate:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
       - name: Generate snake animation
         uses: Platane/snk/svg-only@v3
