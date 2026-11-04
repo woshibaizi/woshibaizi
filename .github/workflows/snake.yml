@@ -31,11 +31,31 @@ jobs:
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
       - name: Publish snake animation
-        uses: crazy-max/ghaction-github-pages@v4
+        uses: actions/github-script@v8
         with:
-          target_branch: output
-          build_dir: dist
-          keep_history: true
-          allow_empty_commit: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          retries: 3
+          script: |
+            const fs = require('node:fs/promises');
+            const { createHash } = require('node:crypto');
+            const branch = 'output';
+            for (const path of [
+              'github-contribution-grid-snake.svg',
+              'github-contribution-grid-snake-dark.svg',
+            ]) {
+              const content = await fs.readFile(`dist/${path}`);
+              const { data: current } = await github.rest.repos.getContent({
+                ...context.repo, path, ref: branch,
+              });
+              const sha = createHash('sha1')
+                .update(`blob ${content.length}\0`).update(content).digest('hex');
+              if (current.sha === sha) {
+                core.info(`${path} is already up to date`);
+                continue;
+              }
+              await github.rest.repos.createOrUpdateFileContents({
+                ...context.repo, path, branch, sha: current.sha,
+                message: 'Refresh snake from the latest contribution calendar',
+                content: content.toString('base64'),
+              });
+              core.info(`Updated ${path}`);
+            }
